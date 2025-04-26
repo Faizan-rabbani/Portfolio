@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Faizan Rabbani | Web Developer</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- AOS (for animations) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+  <body>
+    <div id="content">
+      <nav id="navbar">
+        <div class="nav-content">
+          <div class="logo">Faizan</div>
+          <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <header id="hero">
+        <div class="hero-text" data-aos="fade-up">
+          <h1>Faizan Rabbani</h1>
+          <p>Web Developer</p>
+          <p>
+            Hello! I'm Faizan Rabbani, a passionate web developer specializing
+            in HTML, CSS, JavaScript, Python, Django, SQL, and MongoDB.
+          </p>
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+        <div class="hero-img" data-aos="fade-up">
+          <img src="profilepic.jpg" alt="Faizan Rabbani" />
+        </div>
+      </header>
+
+      <section id="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>
+          "Hi, I'm Faizan Rabbani, a passionate and dedicated web developer with
+          a keen eye for detail and an unwavering drive to create elegant and
+          user-friendly digital experiences. With a solid foundation in web
+          technologies like HTML, CSS, JavaScript, Python, and Django, I
+          specialize in building responsive, dynamic websites and applications
+          that not only look stunning but also function seamlessly. My goal is
+          to deliver high-quality, efficient, and scalable solutions that exceed
+          client expectations. I thrive in problem-solving environments and
+          continuously challenge myself to learn new skills and stay ahead of
+          industry trends. Let’s collaborate and build something amazing
+          together!"
+        </p>
+      </section>
+
+      <section id="education" data-aos="fade-up">
+        <h2>Education</h2>
+        <div class="education-card">
+          <h3>Bachelor of Computer Science</h3>
+          <p>COMSATS University Islamabad, Sahiwal Campus</p>
+          <small>2022 - Present</small>
+        </div>
+        <div class="education-card">
+          <h3>Intermediate in Computer Science</h3>
+          <p>Punjab Group of Colleges</p>
+          <small>2020 - 2022</small>
+        </div>
+        <div class="education-card">
+          <h3>Matriculation (Science)</h3>
+          <p>Pre-Forces High School</p>
+          <small>2018 - 2020</small>
+        </div>
+      </section>
+
+      <section id="skills" data-aos="fade-up">
+        <h2>Skills</h2>
+        <div class="skill-bar">
+          <p>HTML</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 95%">95</div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <p>CSS</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 90%">90</div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <p>JavaScript</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 80%">80</div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <p>Python</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 80%">80</div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <p>Django</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 80%">75</div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <p>SQL</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 85%">85</div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <p>MongoDB</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 75%">60</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <div class="contact-form">
+          <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+        <div class="social-icons">
+          <a
+            href="https://linkedin.com/in/faizan-rabbani-585b46346/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/Faizan-rabbani" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+        <p>&copy; 2025 Faizan Rabbani</p>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
