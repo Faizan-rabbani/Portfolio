@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Faizan Rabbani | Web Developer</title>
 
-    <!-- Styles -->
     <link rel="stylesheet" href="index.css" />
-    <link rel="icon" href="profilepic2.jpg">
+    <link rel="icon" href="profilepic2.jpg" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
       rel="stylesheet"
@@ -16,26 +15,38 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-
-    <!-- AOS (for animations) -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
-
     <div id="loader-wrapper">
       <div id="loader"></div>
     </div>
-    
-    
+
     <div id="content">
       <nav id="navbar">
         <div class="nav-content">
-          <div class="logo">Faizan</div>
-          <div class="nav-links">
+          <div class="logo">FaizanDev</div>
+
+          <div class="nav-links center-nav">
             <a href="#about">About</a>
             <a href="#education">Education</a>
             <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
+          </div>
+
+          <div class="github-btn">
+            <a
+              href="https://github.com/Faizan-rabbani"
+              target="_blank"
+              class="btn github-link"
+            >
+              <i class="fab fa-github"></i> GitHub
+            </a>
           </div>
         </div>
       </nav>
@@ -48,7 +59,10 @@
             Hello! I'm Faizan Rabbani, a passionate web developer specializing
             in HTML, CSS, JavaScript, Python, Django, SQL, and MongoDB.
           </p>
-          <a href="#contact" class="btn">Contact Me</a>
+          <div class="hero-buttons">
+             <a href="Faizan CV.pdf" target="_blank" class="btn">Open CV</a>
+            <a href="#contact" class="btn">Contact Me</a>
+          </div>
         </div>
         <div class="hero-img" data-aos="fade-up">
           <img src="profilepic.jpg" alt="Faizan Rabbani" />
@@ -58,17 +72,17 @@
       <section id="about" data-aos="fade-up">
         <h2>About Me</h2>
         <p>
-          "Hi, I'm Faizan Rabbani, a passionate and dedicated web developer with
-          a keen eye for detail and an unwavering drive to create elegant and
-          user-friendly digital experiences. With a solid foundation in web
-          technologies like HTML, CSS, JavaScript, Python, and Django, I
-          specialize in building responsive, dynamic websites and applications
-          that not only look stunning but also function seamlessly. My goal is
-          to deliver high-quality, efficient, and scalable solutions that exceed
-          client expectations. I thrive in problem-solving environments and
-          continuously challenge myself to learn new skills and stay ahead of
-          industry trends. Let’s collaborate and build something amazing
-          together!"
+          I'm Faizan Rabbani, a passionate and detail-oriented web developer
+          with a solid foundation in HTML, CSS, JavaScript, Python, and Django.
+          I specialize in crafting responsive, elegant, and user-centric web
+          experiences that not only look great but also deliver real, measurable
+          value. With a strong commitment to clean code and modern design
+          principles, I strive to develop scalable applications that meet both
+          user and business needs. I'm always exploring new technologies,
+          improving my skills, and building innovative projects that push
+          boundaries and solve real-world problems. Whether it's developing
+          dynamic frontend interfaces or robust backend systems, I'm driven by
+          the goal of creating meaningful digital solutions.
         </p>
       </section>
 
@@ -91,49 +105,163 @@
         </div>
       </section>
 
-      <section id="skills" data-aos="fade-up">
-        <h2>Skills</h2>
-        <div class="skill-bar">
-          <p>HTML</p>
-          <div class="progress">
-            <div class="progress-bar" style="width: 95%">95</div>
+      <section id="skills" class="skills-bar-section">
+        <h2>My Skills</h2>
+
+        <div class="skill">
+          <div class="skill-info">
+            <i class="fab fa-html5"></i>
+            <span>HTML</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 90%"></div>
           </div>
         </div>
-        <div class="skill-bar">
-          <p>CSS</p>
-          <div class="progress">
-            <div class="progress-bar" style="width: 90%">90</div>
+
+        <div class="skill">
+          <div class="skill-info">
+            <i class="fab fa-css3-alt"></i>
+            <span>CSS</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 80%"></div>
           </div>
         </div>
-        <div class="skill-bar">
-          <p>JavaScript</p>
-          <div class="progress">
-            <div class="progress-bar" style="width: 80%">80</div>
+
+        <div class="skill">
+          <div class="skill-info">
+            <i class="fab fa-js-square"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 75%"></div>
           </div>
         </div>
-        <div class="skill-bar">
-          <p>Python</p>
-          <div class="progress">
-            <div class="progress-bar" style="width: 80%">80</div>
+
+        <div class="skill">
+          <div class="skill-info">
+            <i class="fab fa-python"></i>
+            <span>Python</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 65%"></div>
           </div>
         </div>
-        <div class="skill-bar">
-          <p>Django</p>
-          <div class="progress">
-            <div class="progress-bar" style="width: 80%">75</div>
+
+        <div class="skill">
+          <div class="skill-info">
+            <i class="fas fa-leaf"></i>
+            <span>Django</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 70%"></div>
           </div>
         </div>
-        <div class="skill-bar">
-          <p>SQL</p>
-          <div class="progress">
-            <div class="progress-bar" style="width: 85%">85</div>
+
+        <div class="skill">
+          <div class="skill-info">
+            <i class="fas fa-database"></i>
+            <span>SQL</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 80%"></div>
           </div>
         </div>
-        <div class="skill-bar">
-          <p>MongoDB</p>
-          <div class="progress">
-            <div class="progress-bar" style="width: 75%">60</div>
+
+        <div class="skill">
+          <div class="skill-info">
+            <i class="fas fa-server"></i>
+            <span>MongoDB</span>
           </div>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 55%"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+
+        <div class="project-grid">
+          <div class="project-card">
+            <img src="Netflix.jpg" alt="Netflix Clone" class="project-image" />
+            <div class="project-info">
+              <h3>Netflix Clone</h3>
+              <p>
+                A functional Netflix clone with OTP functionality for user
+                security, built using Django.
+              </p>
+              <a
+                href="https://github.com/Faizan-rabbani/netflixclone"
+                target="_blank"
+                class="project-btn"
+                >View Code</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="Airlines.png" alt="Netflix Clone" class="project-image" />
+            <div class="project-info">
+              <h3>Arilines-Management-System</h3>
+              <p>
+                A functional Arilines-Management-System for booking flight and
+                handle passenger and flights data, built using Django.
+              </p>
+              <a
+                href="https://github.com/Faizan-rabbani/Arilines-Management-System"
+                target="_blank"
+                class="project-btn"
+                >View Code</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img
+              src="Todolist.png"
+              alt="Todo List Website"
+              class="project-image"
+            />
+            <div class="project-info">
+              <h3>To-Do List Website</h3>
+              <p>
+                This is a sleek and interactive To-Do List web app that lets
+                users add, edit, complete, and delete tasks with a modern and
+                responsive user interface.
+              </p>
+              <a
+                href="https://github.com/Faizan-rabbani/todolist"
+                target="_blank"
+                class="project-btn"
+                >View Code</a
+              >
+              <a
+                href="https://klien.netlify.app/"
+                target="_blank"
+                class="project-btn"
+                >Demo</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="Gym.png" alt="Gym Website" class="project-image" />
+            <div class="project-info">
+              <h3>Gym Website</h3>
+              <p>
+                This is a modern and responsive gym website for Faizan Fitness,
+                designed to promote health, strength, and easy membership
+                registration.
+              </p>
+              <a
+                href="https://github.com/Faizan-rabbani/Gym-website"
+                target="_blank"
+                class="project-btn"
+                >View Code</a>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -170,17 +298,13 @@
             ><i class="fab fa-github"></i
           ></a>
         </div>
-        <p>&copy; 2025 Faizan Rabbani</p>
+        <p>&copy; 2025 Faizan Rabbani. All rights reserved.</p>
       </footer>
     </div>
 
-    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init({
-        duration: 800,
-        once: true,
-      });
+      AOS.init({ duration: 800, once: true });
     </script>
     <script src="index.js"></script>
   </body>
