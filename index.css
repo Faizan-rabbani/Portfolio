@@ -24,6 +24,7 @@ body {
   100% {background-position: 0% 50%;}
 }
 
+/* Loader */
 #loader-wrapper {
   position: fixed;
   top: 0; left: 0;
@@ -65,13 +66,18 @@ body {
 
 /* Navbar */
 #navbar {
-  position: fixed;
-  top: 0;
   width: 100%;
   background: rgba(15, 32, 39, 0.8);
   backdrop-filter: blur(15px);
   z-index: 999;
   padding: 15px 30px;
+}
+
+@media (min-width: 769px) {
+  #navbar {
+    position: fixed;
+    top: 0;
+  }
 }
 
 .nav-content {
@@ -80,6 +86,7 @@ body {
   align-items: center;
   max-width: 1200px;
   margin: auto;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -87,6 +94,14 @@ body {
   font-weight: 800;
   color: #00ffc6;
   text-shadow: 0 0 10px #00ffc6;
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-links a {
@@ -102,6 +117,37 @@ body {
   text-shadow: 0 0 10px #00ffc6;
 }
 
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #00ffc6;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+    display: none;
+  }
+
+  .nav-open .nav-links {
+    display: flex;
+  }
+
+  .github-btn {
+    margin-top: 10px;
+  }
+}
+
+/* GitHub Button */
 .github-btn {
   flex-shrink: 0;
 }
@@ -212,7 +258,7 @@ h2 {
   text-shadow: 0 0 8px #00ffc6;
 }
 
-/* Cards with Glassmorphism */
+/* Glassmorphism Cards */
 .education-card,
 .contact-form,
 .project-card {
@@ -228,19 +274,11 @@ h2 {
 }
 
 /* Projects */
-
-
 .projects-section {
   padding: 60px 20px;
   background-color: var(--bg);
   color: var(--text);
   text-align: center;
-}
-
-.projects-section h2 {
-  font-size: 2.5rem;
-  color: #00ffc6;
-  margin-bottom: 2rem;
 }
 
 .project-grid {
@@ -310,10 +348,7 @@ h2 {
   background-color: #0051ff;
 }
 
-
-
 /* Skills */
-
 .skills-bar-section {
   padding: 60px 20px;
   max-width: 800px;
@@ -367,7 +402,6 @@ h2 {
   }
 }
 
-
 /* Contact */
 .contact-form input,
 .contact-form textarea {
@@ -403,22 +437,15 @@ footer {
   text-shadow: 0 0 10px #00ffc6;
 }
 
-/* Responsive */
+/* Mobile Hero Adjustments */
 @media (max-width: 768px) {
   #hero {
     flex-direction: column-reverse;
     text-align: center;
   }
+
   .hero-img img {
     width: 70%;
-  }
-}
-
-@media (max-width: 768px) {
-  .nav-content {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
   }
 
   .center-nav {
