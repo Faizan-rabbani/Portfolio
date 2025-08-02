@@ -180,123 +180,80 @@
       </section>
 
       <section id="projects" class="projects-section">
-        <h2>Projects</h2>
+  <h2>Projects</h2>
 
-        <div class="project-grid">
-          <div class="project-card">
-            <img src="Netflix.jpg" alt="Netflix Clone" class="project-image" />
-            <div class="project-info">
-              <h3>Netflix Clone</h3>
-              <p>
-                A functional Netflix clone with OTP functionality for user
-                security, built using Django.
-              </p>
-              <a
-                href="https://github.com/Faizan-rabbani/netflixclone"
-                target="_blank"
-                class="project-btn"
-                >View Code</a
-              >
-            </div>
-          </div>
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab-button active" data-category="all">All</button>
+     <button class="tab-button" data-category="frontend">HTML/CSS/JS</button>
+    <button class="tab-button" data-category="django">Django</button>
+  </div>
 
-          <div class="project-card">
-            <img src="Airlines.png" alt="Netflix Clone" class="project-image" />
-            <div class="project-info">
-              <h3>Arilines-Management-System</h3>
-              <p>
-                A functional Arilines-Management-System for booking flight and
-                handle passenger and flights data, built using Django.
-              </p>
-              <a
-                href="https://github.com/Faizan-rabbani/Arilines-Management-System"
-                target="_blank"
-                class="project-btn"
-                >View Code</a
-              >
-            </div>
-          </div>
+  <!-- Projects Grid -->
+  <div class="project-grid">
+    <!-- Frontend Projects -->
+    <div class="project-card" data-category="frontend">
+      <img src="To-Do List.png" alt="Todo List Website" class="project-image" />
+      <div class="project-info">
+        <h3>To-Do List Website</h3>
+        <p>
+          A sleek and interactive To-Do List web app built with HTML/CSS/JS.
+        </p>
+        <a href="https://github.com/Faizan-rabbani/todolist" target="_blank" class="project-btn">View Code</a>
+        <a href="https://faizanto-dolist.netlify.app/" target="_blank" class="project-btn">Demo</a>
+      </div>
+    </div>
 
-          <div class="project-card">
-            <img
-              src="To-Do List.png"
-              alt="Todo List Website"
-              class="project-image"
-            />
-            <div class="project-info">
-              <h3>To-Do List Website</h3>
-              <p>
-                This is a sleek and interactive To-Do List web app that lets
-                users add, edit, complete, and delete tasks with a modern and
-                responsive user interface.
-              </p>
-              <a
-                href="https://github.com/Faizan-rabbani/todolist"
-                target="_blank"
-                class="project-btn"
-                >View Code</a
-              >
-              <a
-                href="https://faizanto-dolist.netlify.app/"
-                target="_blank"
-                class="project-btn"
-                >Demo</a
-              >
-            </div>
-          </div>
+    <div class="project-card" data-category="frontend">
+      <img src="Gym.png" alt="Gym Website" class="project-image" />
+      <div class="project-info">
+        <h3>Gym Website</h3>
+        <p>
+          A responsive website promoting Faizan Fitness gym services.
+        </p>
+        <a href="https://github.com/Faizan-rabbani/Gym-website" target="_blank" class="project-btn">View Code</a>
+        <a href="https://faizanfitness.netlify.app/" target="_blank" class="project-btn">Demo</a>
+      </div>
+    </div>
 
-          <div class="project-card">
-            <img src="Gym.png" alt="Gym Website" class="project-image" />
-            <div class="project-info">
-              <h3>Gym Website</h3>
-              <p>
-                This is a modern and responsive gym website for Faizan Fitness,
-                designed to promote health, strength, and easy membership
-                registration.
-              </p>
-              <a
-                href="https://github.com/Faizan-rabbani/Gym-website"
-                target="_blank"
-                class="project-btn"
-                >View Code</a
-              >
-              <a
-                href="https://faizanfitness.netlify.app/"
-                target="_blank"
-                class="project-btn"
-                >Demo</a
-              >
-            </div>
-          </div>
+    <div class="project-card" data-category="frontend">
+      <img src="typingSpeed.png" alt="Typing Speed Website" class="project-image" />
+      <div class="project-info">
+        <h3>Typing Speed Testing Website</h3>
+        <p>
+          A test site that calculates WPM with motivational anime quotes.
+        </p>
+        <a href="https://github.com/Faizan-rabbani/typingSpeedtesting" target="_blank" class="project-btn">View Code</a>
+        <a href="https://faizantypingspeedtest.netlify.app/" target="_blank" class="project-btn">Demo</a>
+      </div>
+    </div>
+    
+    <!-- Django Project -->
+    <div class="project-card" data-category="django">
+      <img src="Netflix.jpg" alt="Netflix Clone" class="project-image" />
+      <div class="project-info">
+        <h3>Netflix Clone</h3>
+        <p>
+          A functional Netflix clone with OTP functionality for user
+          security, built using Django.
+        </p>
+        <a href="https://github.com/Faizan-rabbani/netflixclone" target="_blank" class="project-btn">View Code</a>
+      </div>
+    </div>
 
-          <div class="project-card">
-            <img
-              src="typingSpeed.png"
-              alt="Typing Speed Testing Website"
-              class="project-image"
-            />
-            <div class="project-info">
-              <h3>Typing Speed Testing Website</h3>
-              <p>
-                A sleek and interactive Typing Speed Test that measures your WPM
-                and accuracy using motivational anime quotes.
-              </p>
-              <a
-                href="https://github.com/Faizan-rabbani/typingSpeedtesting"
-                target="_blank"
-                class="project-btn"
-                >View Code</a
-              >
-              <a
-                href="https://faizantypingspeedtest.netlify.app/"
-                target="_blank"
-                class="project-btn"
-                >Demo</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
+    <div class="project-card" data-category="django">
+      <img src="Airlines.png" alt="Airlines System" class="project-image" />
+      <div class="project-info">
+        <h3>Airlines-Management-System</h3>
+        <p>
+          A system for booking flights and handling passenger data, built with Django.
+        </p>
+        <a href="https://github.com/Faizan-rabbani/Arilines-Management-System" target="_blank" class="project-btn">View Code</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       <section id="contact" data-aos="fade-up">
         <h2>Contact Me</h2>

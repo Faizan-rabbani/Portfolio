@@ -274,6 +274,29 @@ h2 {
 }
 
 /* Projects */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.tab-button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.tab-button:hover,
+.tab-button.active {
+  background-color: #0077cc;
+  color: white;
+}
+
 .projects-section {
   padding: 60px 20px;
   background-color: var(--bg);
