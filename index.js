@@ -1,3 +1,11 @@
+document.querySelector("form").addEventListener("submit", function(e) {
+    const messageField = document.querySelector("textarea[name='message']");
+    if (messageField.value.trim() === "") {
+      e.preventDefault();
+      alert("Please enter a valid message.");
+    }
+  });
+
 document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     document.getElementById('content').style.display = 'block';
